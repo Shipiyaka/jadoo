@@ -1,0 +1,83 @@
+.hero {
+  padding-bottom: 200px;
+  position: relative;
+  top: -90px;
+  background-image: url("@img/hero/hero-bg.png");
+
+  &__container {
+  }
+
+  &__banner {
+    padding-bottom: 14px;
+    position: relative;
+    top: 90px;
+    background-image: url("@img/hero/img-01.png");
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__uptitle {
+    padding-top: 190px;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #df6951;
+  }
+
+  &__title {
+    max-width: 545px;
+    margin-bottom: 30px;
+    font-family: "Volkhov";
+    text-transform: none;
+    font-weight: 700;
+    font-size: 84px;
+    line-height: 89px;
+    letter-spacing: -0.04em;
+    color: #181e4b;
+  }
+
+  &__subtitle {
+    margin-bottom: 34px;
+    max-width: 477px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #5e6282;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    &:not(:last-child) {
+      margin-right: 44px;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+    color: #686d77;
+  }
+}
+.play-btn {
+  margin-right: 21px;
+  width: 52px;
+  height: 52px;
+  padding: 20px;
+  background-color: #df6951;
+  border-radius: 50%;
+  box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+
+  &__img {
+    position: relative;
+    top: -5px;
+    left: 2px;
+  }
+}

@@ -1,0 +1,14 @@
+.header {
+  margin-top: 48px;
+  position: relative;
+  z-index: 15;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+  }
+}

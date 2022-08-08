@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #5e6282;
+  min-width: 320px;
+  margin: 0;
+  font-family: $font-family;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  overflow-anchor: none;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.link-reset {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.btn-reset {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.input-reset,
+.textarea-reset {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.container {
+  max-width: 1145px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  margin: 0;
+  font-family: "Volkhov";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 64px;
+  text-transform: capitalize;
+  color: #14183e;
+}
+
+.subtitle {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 124.5%;
+  color: #5e6282;
+}
+
+.text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 124.5%;
+  color: #5e6282;
+}
+
+.uptitle {
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #5e6282;
+}
+
+.link {
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    border-bottom: 2px solid currentColor;
+  }
+}
+
+.img-bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.underline {
+  position: relative;
+
+  &::after {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 19px;
+    left: -32px;
+    width: 385px;
+    height: 12px;
+    background-image: url("@img/icons/underline.svg");
+  }
+}
+
+.btn {
+  font-family: "GoogleSans";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  padding: 19px 27px;
+  background-color: #f1a501;
+  box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: #f1a501;
+    background-color: #fff;
+  }
+}
