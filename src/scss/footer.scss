@@ -1,0 +1,136 @@
+.footer {
+  &__container {
+  }
+
+  &__middle {
+    margin-bottom: 84px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__column {
+  }
+
+  &__title {
+    margin-bottom: 19px;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 66px;
+    color: #181e4b;
+  }
+
+  &__descr {
+    max-width: 207px;
+    font-weight: 500;
+    font-size: 13px;
+    color: #5e6282;
+  }
+
+  &__subtitle {
+    position: relative;
+    top: 22px;
+    margin-bottom: 56px;
+    font-weight: 700;
+    font-size: 21px;
+    color: #080809;
+  }
+
+  &__text {
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #5e6282;
+
+    &_big {
+    }
+  }
+
+  &__icons {
+    position: relative;
+    top: 22px;
+    margin-bottom: 52px;
+    display: flex;
+  }
+
+  &__link {
+    display: inline-block;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+
+    &:hover {
+      background: conic-gradient(
+        from 180deg at 50% 50%,
+        #b8d2f1 0deg,
+        #f289aa 60deg,
+        #c68bf0 106.09deg,
+        #d164da 153.75deg,
+        #c963e8 221.25deg,
+        #bfc2e8 258.75deg,
+        #ffc999 288.75deg,
+        #d0d8c9 315deg,
+        #bad0f1 334.13deg,
+        #ced8cb 358.97deg,
+        rgba(255, 255, 255, 0) 360deg
+      );
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+      border-bottom: none;
+    }
+
+    &_fb {
+      background-image: url("@img/icons/icon-fb.svg");
+
+      &:hover::before {
+        display: inline-block;
+        position: relative;
+        content: url("@img/icons/icon-fb-wh.svg");
+      }
+    }
+
+    &_inst {
+      background-image: url("@img/icons/icon-inst.svg");
+
+      &:hover::before {
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        content: url("@img/icons/icon-inst-wh.svg");
+      }
+    }
+
+    &_tw {
+      background-image: url("@img/icons/icon-tw.svg");
+
+      &:hover::before {
+        display: inline-block;
+        position: relative;
+        content: url("@img/icons/icon-tw-wh.svg");
+      }
+    }
+  }
+
+  &__img {
+    &:not(:last-child) {
+      margin-right: 7px;
+    }
+  }
+
+  &__bottom {
+    margin-bottom: 70px;
+    text-align: center;
+  }
+}
+
+.copyright {
+}
