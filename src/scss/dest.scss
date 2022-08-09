@@ -1,0 +1,91 @@
+.dest {
+  margin-bottom: 186px;
+
+  &__container {
+    text-align: center;
+  }
+
+  &__uptitle {
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__columns {
+    display: flex;
+    justify-content: space-between;
+    // flex-wrap: wrap;
+  }
+
+  &__column {
+    min-height: 457px;
+    width: 315px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    background-position: top;
+    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02))
+      drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852))
+      drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481))
+      drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01))
+      drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185))
+      drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+    border-radius: 24px;
+
+    &:first-child {
+      background-image: url("@img/dest/img-01.png");
+    }
+
+    &:nth-child(2) {
+      background-image: url("@img/dest/img-02.png");
+    }
+
+    &:nth-child(3) {
+      background-image: url("@img/dest/img-03.png");
+    }
+
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
+
+  &__inner {
+    width: 100%;
+    padding: 20px 27px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 0px 0px 24px 24px;
+  }
+
+  &__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 19px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 124.5%;
+    color: #5e6282;
+  }
+
+  &__descr {
+    &::before {
+      display: inline-block;
+      content: "";
+      position: relative;
+      top: 2px;
+      margin-right: 16px;
+      width: 17px;
+      height: 17px;
+      background-image: url("@img/icons/geo.svg");
+    }
+  }
+}

@@ -99,6 +99,14 @@ body {
   color: #5e6282;
 }
 
+.descr {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 124.5%;
+  color: #5e6282;
+}
+
 .link {
   border-bottom: 2px solid transparent;
 
@@ -145,4 +153,8 @@ body {
     color: #f1a501;
     background-color: #fff;
   }
+}
+
+.purple {
+  color: #8a79df;
 }
