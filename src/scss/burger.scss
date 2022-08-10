@@ -91,7 +91,7 @@
 .burger-line {
   width: 30px;
   height: 2px;
-  background: rgb(255, 255, 255);
+  background: #181e4b;
   transition: 0.3s all;
 }
 
@@ -110,13 +110,13 @@
 
 #check-burger:checked ~ label .burger-span .burger-line.second-line {
   transform: rotate(45deg);
-  background: #005140;
+  background: #181e4b;
   height: 2px;
 }
 
 #check-burger:checked ~ label .burger-span .burger-line.third-line {
   transform: rotate(-45deg);
-  background: #005140;
+  background: #181e4b;
 }
 
 #check-burger:checked ~ label .burger-span .burger-line.fourth-line {

@@ -3,16 +3,29 @@
 
   &__container {
     padding: 80px 144px;
+    margin: 0 20px;
     background-color: rgb(223, 215, 249, 0.2);
     border-radius: 129px 20px 20px 20px;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     background-position: right;
     background-image: url("@img/subscr/bg.png");
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+
+    &::after {
+      display: inline-block;
+      content: "";
+      position: absolute;
+      top: -13px;
+      right: -20px;
+      width: 70px;
+      height: 70px;
+      background-image: url("@img/subscr/icon-tg.png");
+    }
   }
 
   &__title {
@@ -27,12 +40,15 @@
   }
 
   &__item {
+    width: 100%;
+    max-width: 625px;
+    display: flex;
   }
 
   &__input {
+    flex: 1;
     margin-right: 24px;
     padding-left: 66px;
-    width: 421px;
     height: 68px;
     background-color: #ffffff;
     border-radius: 10px;

@@ -16,7 +16,20 @@
   &__columns {
     display: flex;
     justify-content: space-between;
-    // flex-wrap: wrap;
+    position: relative;
+    margin-right: 62px;
+
+    &::after {
+      display: inline-block;
+      position: absolute;
+      z-index: -1;
+      bottom: 47px;
+      right: -62px;
+      content: "";
+      width: 98px;
+      height: 254px;
+      background-image: url("@img/icons/wire.svg");
+    }
   }
 
   &__column {

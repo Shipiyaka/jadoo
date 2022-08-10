@@ -1,13 +1,138 @@
 @media (max-width: 1225px) {
+  .hero__banner {
+    background-size: auto;
+  }
+
+  .hero__uptitle {
+    font-size: 18px;
+  }
+
+  .hero__title {
+    font-size: 72px;
+  }
+
+  .hero__subtitle {
+    max-width: 420px;
+  }
+
+  .hero__btns {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero__btn:not(:last-child) {
+    margin-bottom: 28px;
+  }
+
+  .play-btn {
+    margin-right: 14px;
+  }
+
+  .services__column {
+    padding: 30px;
+  }
+
+  .booking__title {
+    max-width: 450px;
+    line-height: 58px;
+  }
 }
 
 @media (max-width: 992px) {
+  .hero__banner {
+    background-image: none;
+  }
+
+  .nav-li:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .services__columns {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    gap: 70px;
+  }
+
+  .services__column:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .dest__columns {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .dest__columns::after {
+    display: none;
+  }
+
+  .dest__column:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .subscr__container {
+    padding: 80px 80px;
+  }
+
+  .footer__middle {
+    display: grid;
+    gap: 30px;
+  }
 }
 
 @media (max-width: 768px) {
+  .booking__container {
+    flex-direction: column;
+  }
+
+  .booking__column_text {
+    margin-bottom: 100px;
+    margin-right: 0;
+  }
+
+  .subscr__item {
+    flex-direction: column;
+  }
+
+  .subscr__input {
+    min-height: 67px;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 576px) {
+  .hero__title {
+    font-size: 56px;
+    line-height: 68px;
+  }
+
+  .services__columns {
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .booking__title {
+    max-width: none;
+  }
+
+  .clients__container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .subscr__container {
+    padding: 110px 29px;
+  }
+
+  .subscr__title {
+    font-size: 28px;
+    line-height: 45px;
+  }
 }
 
 @media (max-width: 375px) {

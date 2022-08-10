@@ -48,6 +48,11 @@
     color: #5e6282;
   }
 
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
   &__btns {
     display: flex;
     align-items: center;
